@@ -1,0 +1,9 @@
+<div class="photographer-info">
+    <img [src]="article.urlToImage" alt="Photographer" />
+    <h2>{{ article.title }}</h2>
+    <p><b>Author: </b>{{ article.author }}</p>
+    <p>{{ article.description }}</p>
+    <p>{{article.content}}</p>
+    <p>Published on: {{ article.publishedAt | date }}</p>
+    <p class="source">Source: {{ article.source.name }}</p>
+</div>

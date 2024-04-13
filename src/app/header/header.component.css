@@ -1,0 +1,46 @@
+.navbar {
+    background-color: #3498db; /* Main blue color for the navbar background */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #fff; /* White text color for better contrast */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #2980b9; /* Darker shade of blue on hover */
+  }
+  
+  .navbar .logo {
+    float: left;
+  }
+
+  .navbar .logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+  }
+  
+  .navbar .nav-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .navbar .logo, .navbar .nav-right {
+      float: none;
+    }
+  }
+  

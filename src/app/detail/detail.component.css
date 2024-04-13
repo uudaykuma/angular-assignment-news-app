@@ -1,0 +1,91 @@
+/* .article {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    width: 80vw;
+  }
+  
+  .article-image {
+    width: 200px;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .article-details {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .article-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .author {
+    font-style: italic;
+    color: #666;
+  }
+  
+  .source {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .published-at {
+    font-size: 12px;
+    color: #666;
+  }
+  
+   */
+
+/* photographer-info.component.css */
+
+.photographer-info {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  .photographer-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .photographer-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .photographer-info img {
+    max-width: 80%;
+    max-height: 300px;
+    min-height: 300px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block; /* Center the image horizontally */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .photographer-info .source {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  

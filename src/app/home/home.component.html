@@ -1,0 +1,28 @@
+
+<div class="home-page">
+    <div class="filter-conatiner">
+      <select [(ngModel)]="selectedCountryValue" (ngModelChange)="onSelectcountry()">
+        <option value="">Select an option&hellip;</option>
+        <option
+          *ngFor="let key of countryKeys()"
+          [value]="key">
+            {{country[key]}}
+        </option>
+      </select>
+      <select [(ngModel)]="selectedCategoryValue" (ngModelChange)="onSelectCategory()">
+        <option value="">Select an option&hellip;</option>
+        <option
+          *ngFor="let key of categoryKeys()"
+          [value]="key">
+            {{category[key]}}
+        </option>
+      </select>
+      <button class="search-button" (click)="handleSearchArticle()">Search</button>
+    </div>
+    <div class="card-container">
+      <app-news-card *ngFor="let news of newsArticle" [news] = "news"></app-news-card>
+    </div>
+  </div>
+  
+
+  
