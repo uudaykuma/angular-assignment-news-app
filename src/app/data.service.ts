@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-  apiKey: String = 'dc5e66a1c7454fd28d5562fffe56579a'
+  apiKey: String = environment.api_keys
   constructor(private http: HttpClient) { }
 
   fetchData(pageSize, searchParams): Observable<any> {
